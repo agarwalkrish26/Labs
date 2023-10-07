@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ filename }} - Album</title>
+    <style>
+        body {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 15px;
+            margin: auto;
+            display: block;
+        }
+        
+        a {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/' + filename) }}" alt="Family Photo">
+    <br><br>
+    <a href="{{ url_for('index') }}">Back to Album</a>
+</body>
+</html>
