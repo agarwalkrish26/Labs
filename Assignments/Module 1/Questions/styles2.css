@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+marquee {
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+
+.no-pad {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make the list a flex container */
+    color: #0B3F64;
+}
+
+.no-pad li {
+    margin-right: 50px; /* Add some space between list items */
+}
+
+.no-pad li a {
+    color: #0B3F64; /* Set the text color to blue */
+    text-decoration: none; /* Remove the underline */
+}
+
+.no-pad li a:hover {
+    text-decoration: none; /* Ensure the underline doesn't appear on hover */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B3F64;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .menu li a:hover {
+    background-color: #555;
+}
+
+nav img {
+    width: 150px;
+    height: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-content-submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 300px; /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-submenu:hover .dropdown-content-submenu {
+    display: block;
+}
+
+.dropdown-content-submenu a {
+    color: black;
+}
+
+.registration-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.registration-form label,
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
