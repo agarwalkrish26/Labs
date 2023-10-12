@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background-color: #1e1e1e;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-images img {
+    width: 100px;  /* Adjusted value */
+    height: 100px;  /* Adjusted value */
+    margin-left: 10px;  /* No change here */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+main {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+}
+
+.post-box {
+    background-color: #2e2e2e; /* Lighter shade compared to #1e1e1e */
+    border-radius: 8px; /* Round the corners */
+    padding: 20px; /* Space inside the box */
+    margin-bottom: 20px; /* Space between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a "lifted" effect */
+}
+
+/* Optional: Adds some space between the title, date, and content of each post */
+#posts h3 {
+    margin-bottom: 8px;
+}
+
+#posts p {
+    margin-top: 8px;
+}
+
+.about-box {
+    background-color: #2e2e2e; /* Lighter shade compared to #1e1e1e */
+    border-radius: 8px; /* Round the corners */
+    padding: 20px; /* Space inside the box */
+    margin-bottom: 20px; /* Space between boxes */
+}
+
+.profile-pic {
+    border-radius: 50%; /* Make the image circular */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    float: left; /* Aligns the image to the left */
+    margin-right: 20px; /* Space between the image and text */
+}
+
+/* Optional: Adds some space between the paragraphs */
+#about p {
+    margin-top: 8px;
+}
+
+.contact-box {
+    background-color: #2e2e2e; /* Lighter shade compared to #1e1e1e */
+    border-radius: 8px; /* Round the corners */
+    padding: 20px; /* Space inside the box */
+    margin-bottom: 20px; /* Space between boxes */
+}
+
+.contact-box label,
+.contact-box input,
+.contact-box textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    margin-bottom: 10px; /* Space between elements */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.contact-box input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-box input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
