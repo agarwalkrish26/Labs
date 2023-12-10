@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Dark Themed Blog</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Krish's Blog</h1>
+                <div class="header-images">
+                    <img src="{{ url_for('static', filename='image1.jpg') }}" alt="Image 1">
+                    <img src="{{ url_for('static', filename='image2.jpg') }}" alt="Image 2">
+                    <img src="{{ url_for('static', filename='image3.jpg') }}" alt="Image 3">
+                    <img src="{{ url_for('static', filename='image4.jpg') }}" alt="Image 4">
+                    <img src="{{ url_for('static', filename='image5.jpg') }}" alt="Image 5">
+                    <img src="{{ url_for('static', filename='image6.jpg') }}" alt="Image 6">
+                    <img src="{{ url_for('static', filename='image7.jpg') }}" alt="Image 7">
+                    <img src="{{ url_for('static', filename='image8.jpg') }}" alt="Image 8">
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="home">
+                <h2>Welcome to My Blog</h2>
+                <p>This is my very first attempt at this... :(</p>
+                <p>Welcome to my little corner of the internet! My name is Krish Agarwal, and I'm a student based in Lavasa - Pune. This blog is a space where I share my thoughts on...well my life, my adventures in DATA SCIENCE, and the lessons I learn along the way.</p>
+                <p>Whether you're a longtime follower or just stumbled upon my blog, I'm glad you're here. I hope you find something that resonates with you or simply makes your day a little brighter.</p>
+                <p>Feel free to reach out through my <a href="#contact">contact page</a> if you have any questions or just want to say hi. I always enjoy connecting with my readers. Don't forget to subscribe to stay updated on my latest posts!</p>
+                <p>Thanks for stopping by!</p>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-box">
+                    <img src="{{ url_for('static', filename='profile.jpeg') }}" alt="Profile Picture" class="profile-pic">
+                    <p>Hello! My name is Krish Agarwal and I am a student based in Lavasa - Pune. My journey into the world of data science began a few years ago and it has been a thrilling ride ever since!</p>
+                    <p>I created this blog as a platform to share my experiences, projects, and insights with others who share similar interests. When I'm not crunching numbers or coding, you'll find me exploring the outdoors or diving into a new book.</p>
+                    <p>I believe in the power of sharing knowledge and I hope that my blog can serve as a source of inspiration and learning for others. Feel free to connect with me through my <a href="#contact">contact page</a>. I'd love to hear from you!</p>
+                </div>
+            </section>
+            
+            <section id="posts">
+                <h2>Latest Posts</h2>
+                
+                <div class="post-box">
+                    <article>
+                        <h3>My Journey into Data Science</h3>
+                        <p>Date: October 8, 2023</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </article>
+                </div>
+            
+                <div class="post-box">
+                    <article>
+                        <h3>Exploring Machine Learning</h3>
+                        <p>Date: October 1, 2023</p>
+                        <p>Nunc accumsan, justo ac pulvinar venenatis...</p>
+                    </article>
+                </div>
+            
+                <div class="post-box">
+                    <article>
+                        <h3>Adventures in Artificial Intelligence</h3>
+                        <p>Date: September 24, 2023</p>
+                        <p>Phasellus nec sapien quis tellus auctor convallis...</p>
+                    </article>
+                </div>            
+            </section>
+            
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="contact-box">
+                    <form action="/submit_contact" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>      
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Krish Agarwal</p>
+        </footer>
+    </body>
+</html>
